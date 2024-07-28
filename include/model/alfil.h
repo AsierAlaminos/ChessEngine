@@ -6,7 +6,7 @@
 class Alfil: public Pieza {
 	
 	public:
-		Alfil(Color color, int x, int y);
+		Alfil(std::string nombre, Color color, int x, int y);
 		~Alfil();
 		int *movimientosPosibles() override;
 

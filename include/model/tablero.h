@@ -9,15 +9,16 @@ class Tablero {
 	
 	public:
 		Tablero();
-		int casillas[8][8];
+		~Tablero();
+		Pieza* casillas[8][8];
 		void mostrarTablero();
-		bool moverPieza(int origen[2], int destino[2]);
+		bool moverPieza(int origen[2], int destino[2], Color color);
 		
 	private:
-		bool movimientoValido(int origen[2], int destino[2]);
-		bool revisarJaque(Color color);
-		bool revisarJaqueMate(Color color);
-
+		struct Private;
+		
 };
+
+bool movimientoValido(Pieza *pieza, Pieza *lugarDestino);
 
 #endif

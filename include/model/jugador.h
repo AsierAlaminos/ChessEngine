@@ -8,10 +8,12 @@
 class Jugador {
 
 	public:
+		Jugador();
 		Jugador(std::string nombre, Color color);
+		~Jugador();
 		std::string nombre;
 		Color color;
-		bool realizarMovimiento(Tablero tablero, int origen[2], int destino[2]);
+		bool realizarMovimiento(Tablero& tablero, int origen[2], int destino[2], Color color);
 
 };
 

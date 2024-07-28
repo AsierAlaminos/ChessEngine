@@ -6,7 +6,7 @@
 class Caballo: public Pieza {
 	
 	public:
-		Caballo(Color color, int x, int y);
+		Caballo(std::string nombre, Color color, int x, int y);
 		~Caballo();
 		int *movimientosPosibles() override;
 

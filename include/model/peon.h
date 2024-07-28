@@ -3,11 +3,12 @@
 
 #include "pieza.h"
 #include "../data.h"
+#include <string>
 
 class Peon: public Pieza {
 	
 	public:
-		Peon(Color color, int x, int y);
+		Peon(std::string nombre, Color color, int x, int y);
 		~Peon();
 		int *movimientosPosibles() override;
 

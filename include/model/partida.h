@@ -9,15 +9,18 @@ class Partida {
 
 	public:
 		Partida();
-		Tablero tablero;
-		Jugador blanco;
-		Jugador negro;
-		Color turno;
+		Partida(Tablero tablero, Jugador blanco, Jugador negro);
+		~Partida();
 		void iniciarPartida();
 
 	private:
-		void cambiarTurno();
+		Jugador blanco;
+		Jugador negro;
+		Tablero tablero;
+		Color turno;
 
 };
+
+Color cambiarTurno(Color turno);
 
 #endif

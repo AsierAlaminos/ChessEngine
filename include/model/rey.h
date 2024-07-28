@@ -6,7 +6,7 @@
 class Rey: public Pieza {
 	
 	public:
-		Rey(Color color, int x, int y);
+		Rey(std::string nombre, Color color, int x, int y);
 		~Rey();
 		int *movimientosPosibles() override;
 

@@ -6,7 +6,7 @@
 class Torre: public Pieza {
 	
 	public:
-		Torre(Color color, int x, int y);
+		Torre(std::string nombre, Color color, int x, int y);
 		~Torre();
 		int *movimientosPosibles() override;
 
